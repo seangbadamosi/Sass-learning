@@ -1,0 +1,33 @@
+$primaryBtn: blue;
+
+header{
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+}
+
+*{
+    margin: 0;
+}
+
+/*  it adds vender prefixes but i don't think it works in this extension so in this example the if it where working the style.css will automactically add vender prefixes to it for the diffrent browser that does not support flex box it also applies to other css properties that might not work across browsers */
+
+/* header button{
+    background-color: red;
+}
+
+.contact button{
+    background-color: red;
+}*/
+
+// this is how it would normally be done, but with scss using variables you do this
+
+header button{
+    background-color:  $primaryBtn;
+}
+
+.contact button{
+    background-color:  $primaryBtn;
+}

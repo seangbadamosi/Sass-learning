@@ -1,0 +1,19 @@
+header {
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+}
+
+* {
+  margin: 0;
+}
+
+header button {
+  background-color: blue;
+}
+
+.contact button {
+  background-color: blue;
+}/*# sourceMappingURL=style.css.map */
