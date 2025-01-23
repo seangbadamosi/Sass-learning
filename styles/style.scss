@@ -1,33 +1,46 @@
 $primaryBtn: blue;
+$textColor :  grey;
+
+*{
+    margin: 0;
+}
 
 header{
     background-color: lightblue;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: $textColor;
     height: 15vh;
+
+    button{
+        background-color:  $primaryBtn;
+        transition: 2s;
+        border-radius: 10px;
+        width: 10vw;
+        height: 6vh;
+        text-transform: capitalize;
+        
+        &:hover{
+            background-color: red;
+        }
+        
+        &::after{
+            content: 'ooo';
+        }
+    }
 }
 
-*{
-    margin: 0;
-}
+/* by nesting we help make the code readable and more maintainable it also helps with hierarchy of the selectors */
 
-/*  it adds vender prefixes but i don't think it works in this extension so in this example the if it where working the style.css will automactically add vender prefixes to it for the diffrent browser that does not support flex box it also applies to other css properties that might not work across browsers */
 
-/* header button{
-    background-color: red;
-}
+main{
 
-.contact button{
-    background-color: red;
-}*/
-
-// this is how it would normally be done, but with scss using variables you do this
-
-header button{
-    background-color:  $primaryBtn;
-}
-
-.contact button{
-    background-color:  $primaryBtn;
+    .contact button{
+        background-color:  $primaryBtn;
+        border-radius: 10px;
+        width: 10vw;
+        height: 6vh;
+        text-transform: capitalize;
+    }
 }

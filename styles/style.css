@@ -1,19 +1,38 @@
+* {
+  margin: 0;
+}
+
 header {
   background-color: lightblue;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: grey;
   height: 15vh;
-}
-
-* {
-  margin: 0;
 }
 
 header button {
   background-color: blue;
+  transition: 2s;
+  border-radius: 10px;
+  width: 10vw;
+  height: 6vh;
+  text-transform: capitalize;
 }
 
-.contact button {
+header button:hover {
+  background-color: red;
+}
+
+header button::after {
+  content: "ooo";
+}
+
+/* by nesting we help make the code readable and more maintainable it also helps with hierarchy of the selectors */
+main .contact button {
   background-color: blue;
+  border-radius: 10px;
+  width: 10vw;
+  height: 6vh;
+  text-transform: capitalize;
 }/*# sourceMappingURL=style.css.map */
