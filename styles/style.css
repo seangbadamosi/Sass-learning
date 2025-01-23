@@ -1,7 +1,3 @@
-* {
-  margin: 0;
-}
-
 header {
   background-color: lightblue;
   display: flex;
@@ -10,27 +6,45 @@ header {
   color: grey;
   height: 15vh;
 }
-
 header button {
-  background-color: blue;
+  background-color: rgba(0, 0, 255, 0.801);
   transition: 2s;
   border-radius: 10px;
   width: 10vw;
   height: 6vh;
   text-transform: capitalize;
+  margin: 0 0 0 10px;
 }
-
 header button:hover {
   background-color: red;
 }
-
 header button::after {
   content: "ooo";
 }
 
-/* by nesting we help make the code readable and more maintainable it also helps with hierarchy of the selectors */
+footer {
+  height: 10vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 255, 0.801);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+}
+
+* {
+  margin: 0;
+}
+
+main {
+  height: 55vh;
+  margin: 20vh 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 main .contact button {
-  background-color: blue;
+  background-color: rgba(0, 0, 255, 0.801);
   border-radius: 10px;
   width: 10vw;
   height: 6vh;

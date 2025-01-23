@@ -1,46 +1,26 @@
-$primaryBtn: blue;
-$textColor :  grey;
+@import './variables';
+@import './header';
+@import './footer';
 
 *{
     margin: 0;
 }
 
-header{
-    background-color: lightblue;
+
+main{
+    height: 55vh;
+    margin: 20vh 0 0 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: $textColor;
-    height: 15vh;
-
-    button{
-        background-color:  $primaryBtn;
-        transition: 2s;
-        border-radius: 10px;
-        width: 10vw;
-        height: 6vh;
-        text-transform: capitalize;
-        
-        &:hover{
-            background-color: red;
-        }
-        
-        &::after{
-            content: 'ooo';
-        }
-    }
-}
-
-/* by nesting we help make the code readable and more maintainable it also helps with hierarchy of the selectors */
-
-
-main{
 
     .contact button{
-        background-color:  $primaryBtn;
+        background-color:  $primaryColor;
         border-radius: 10px;
         width: 10vw;
         height: 6vh;
         text-transform: capitalize;
     }
 }
+
+
