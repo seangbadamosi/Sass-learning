@@ -60,3 +60,33 @@ it
 2   @import ' ./header';
 3   @import ' ./footer';
 ```
+
+### Lesson 4 | Mixins and Include
+* A mixin in scss is a reusable block of css code that allows you to define a set of styles once and then add the directive "include" in different parts of your stylesheet ( like a function in Js)
+* by writing @mixin at the top of your scss file you write css properties in it give the mixin a name give it parentheses () to link it with the tag or selector you want it to affect, you write @include with the name of the mixin and parentheses also add semi-column here is an example below
+```{scss}
+    @mixin flexEnd(){ 👈
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+
+    
+main{
+    height: 55vh;
+    margin: 20vh 0 0 0;
+    @include flexEnd(); 👈
+
+    .contact button{
+        background-color:  $primaryColor;
+        border-radius: 10px;
+        width: 10vw;
+        height: 6vh;
+        text-transform: capitalize;
+    }
+}
+```
+* mixins and include can also work in all the partial scss not just the main file, if they have the directive of @import
+* the name of the mixin should be in camel case that is the words should not be
+
+`Note in this readme.md file my mentioning of js means JavaScript`
