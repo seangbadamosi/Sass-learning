@@ -1,15 +1,5 @@
-@import './variables';
-@import './style.scss';
-
-@mixin flexCenter(){
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 footer{
     @include flexCenter();
-    
     height: 10vh;
     width: 100vw;
     background-color: $primaryColor;

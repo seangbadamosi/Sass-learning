@@ -10,8 +10,7 @@
 main{
     height: 55vh;
     margin: 20vh 0 0 0;
-    // @include flexCenter();
-    
+    @include flexCenter();
 
     .contact button{
         background-color:  $primaryColor;

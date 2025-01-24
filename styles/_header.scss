@@ -1,7 +1,12 @@
-header{
-    background-color: lightblue;
-    // @include flexCenter();
+@mixin flexCenter(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+header{
+    @include flexCenter();
+    background-color: lightblue;
     color: $textColor;
     height: 15vh;
 
