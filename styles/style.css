@@ -2,6 +2,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-transform: capitalize;
   background-color: lightblue;
   color: grey;
   height: 15vh;
@@ -26,6 +27,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-transform: capitalize;
   height: 10vh;
   width: 100vw;
   background-color: rgba(0, 0, 255, 0.801);
@@ -42,8 +44,9 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-transform: lowercase;
 }
-main .contact button {
+main > .contact > button {
   background-color: rgba(0, 0, 255, 0.801);
   border-radius: 10px;
   width: 10vw;

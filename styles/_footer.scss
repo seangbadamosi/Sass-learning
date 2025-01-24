@@ -1,5 +1,5 @@
 footer{
-    @include flexCenter();
+    @include flexCenter(capitalize);
     height: 10vh;
     width: 100vw;
     background-color: $primaryColor;

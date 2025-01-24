@@ -87,6 +87,36 @@ main{
 }
 ```
 * mixins and include can also work in all the partial scss not just the main file, if they have the directive of @import
-* the name of the mixin should be in camel case that is the words should not be
+* a, the name of the mixin should be in camel case that is the words should not be spaced there is example below 👇 
+* b, mixin can carry parameters or inputs 👇  
+```{scss}    
+                👇
+   a, @mixin flexCenter(){}
+   
+   b, @mixin flexCenter ($textTransform, $color) {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        text-transform: $textTransform;
+        color: $color;
+    }
+
+        header{
+    @include flexCenter(capitalize, blue);
+    background-color: lightblue;
+    height: 15vh;
+
+    button{
+        background-color:  $primaryColor;
+        transition: 2s;
+        border-radius: 10px;
+        width: 10vw;
+        height: 6vh;
+        text-transform: $textTransform;
+        margin: 0 0 0 10px;
+        color: $color;
+        }   
+    }
+```
 
 `Note in this readme.md file my mentioning of js means JavaScript`

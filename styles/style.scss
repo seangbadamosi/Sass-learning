@@ -10,14 +10,14 @@
 main{
     height: 55vh;
     margin: 20vh 0 0 0;
-    @include flexCenter();
+    @include flexCenter(lowercase);
 
-    .contact button{
+    > .contact > button{
         background-color:  $primaryColor;
         border-radius: 10px;
         width: 10vw;
         height: 6vh;
-        text-transform: capitalize;
+        text-transform: $textTransform;
     }
 }
 
