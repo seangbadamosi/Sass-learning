@@ -10,24 +10,25 @@ header{
     background-color: lightblue;
     color: $textColor;
     height: 15vh;
-
-    button{
-        background-color:  $primaryColor;
-        transition: 2s;
-        border-radius: 10px;
-        width: 10vw;
-        height: 6vh;
-        text-transform: $textTransform;
-        margin: 0 0 0 10px;
-        
-        &:hover{
-            background-color: red;
-        }
-
-        &::after{
-            content: 'ooo';
-        }
+    nav{
+        text-decoration: none;
     }
+    .button {
+        padding: 10px 20px;
+        background-color: blue;
+        color: white;
+        border-radius: 5px;
+      }
+      
+      .primary-button {
+        @extend .button;
+        background-color: green; /* Overrides background-color */
+      }
+      
+      .secondary-button {
+        @extend .button;
+        background-color: gray; /* Overrides background-color */
+      }
 }
 
 

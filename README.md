@@ -92,7 +92,7 @@ main{
 ```{scss}    
                 👇
    a, @mixin flexCenter(){}
-   
+
    b, @mixin flexCenter ($textTransform, $color) {
         display: flex;
         justify-content: end;
@@ -120,3 +120,29 @@ main{
 ```
 
 `Note in this readme.md file my mentioning of js means JavaScript`
+
+### Lesson 5 | Extend
+* extend is a directive 
+* it helps to reduce repetitive code examples below
+```{scss}
+    .button {
+  padding: 10px 20px;
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+}
+
+.primary-button {
+  @extend .button;
+  background-color: green; /* Overrides background-color */
+}
+
+.secondary-button {
+  @extend .button;
+  background-color: gray; /* Overrides background-color */
+}
+```
+* @extend as is commonly used is used to share a set of CSS properties from one selector with another selector.
+
+
+
